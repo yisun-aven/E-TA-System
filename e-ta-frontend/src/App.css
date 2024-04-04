@@ -1,0 +1,128 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Body and HTML to take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* or any font-family of your choice */
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  background-color: #c5d2d0; /* light gray background for header */
+  text-align: right;
+  align-items: center;
+}
+
+.header button {
+  padding: 0.25rem 0.5rem;
+  background-color: #316159; 
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 1rem;
+  width: 5rem; /* or you can specify a width */
+  height: 3rem; /* or any other value */
+}
+
+.header button:disabled {
+  background-color: #9E9E9E; /* gray out when loading or disabled */
+}
+
+/* Form styles */
+.question-form {
+  padding: 1rem;
+  background-color: #ffffff; /* white background for the form */
+  border-top: 1px solid #eaeaea;
+}
+
+.question-form form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between form items */
+}
+
+.question-form label {
+  font-weight: bold;
+}
+
+/* Styles for input placeholder */
+.question-form input::placeholder {
+  font-size: 1rem; /* Set the size as needed */
+  color: #9a9a9a; /* Placeholder text color */
+}
+
+.question-form input[type="text"] {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.question-form button {
+  padding: 0.5rem 1rem;
+  background-color: #2196F3; /* blue background for submit button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Answer section styles */
+.answer-section {
+  padding: 1rem;
+  background-color: #f8f8f8; /* very light gray for answer section */
+}
+
+/* Error message styles */
+.error-message {
+  color: #D32F2F; /* red color for error messages */
+  padding: 1rem;
+}
+
+/* Collapsible QA styles */
+.btn.btn-link.qa-history-toggle {
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  color: #2196F3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Individual QA item */
+.collapsible-qa-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #cccccc; /* subtle line between items */
+}
+
+.collapsible-qa-item .answer {
+  padding: 0.5rem;
+  background-color: #f0f0f0; /* light background for answers */
+}
+
+.scholar-icon {
+  /* Assuming a 20x20px icon size */
+  height: 20px;
+  width: 20px;
+  /* Add other styles if necessary */
+}
