@@ -231,8 +231,7 @@ MIT
 ## Contact
 
 For questions or support:
-- Email: [email]
-- GitHub: [repo]
+- Email: yisun.aven@gmail.com
 
 ## Performance Notes
 
